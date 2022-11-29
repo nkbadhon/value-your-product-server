@@ -31,7 +31,6 @@ async function run() {
         });
 
 
-
         app.get('/brands', async (req, res) => {
             const query = {};
             const result = await allCategoryCollection.find(query).project({ Category_id: 1 }).toArray();
