@@ -141,7 +141,7 @@ async function run() {
 run().catch(console.log);
 
 
-// middleware
+
 
 app.get('/', async (req, res) => {
     res.send('Server is running');
