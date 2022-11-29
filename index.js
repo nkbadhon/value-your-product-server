@@ -140,9 +140,6 @@ async function run() {
 }
 run().catch(console.log);
 
-
-
-
 app.get('/', async (req, res) => {
     res.send('Server is running');
 })
