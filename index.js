@@ -23,12 +23,15 @@ async function run() {
         const usersCollection = client.db('valueYourProduct').collection('users');
         const ordersCollection = client.db('valueYourProduct').collection('myOrders');
 
-
         app.get('/allCategory', async (req, res) => {
             const query = {};
             const options = await allCategoryCollection.find(query).toArray();
             res.send(options);
         });
+
+
+
+
 
         app.get('/brands', async (req, res) => {
             const query = {};
